@@ -1,25 +1,49 @@
 img {
   max-width: 100%;
+  margin-right: 26px;
 }
 
-li:nth-child(2) {
-  margin-right: 10px;
+nav  {
+  display: none;
 }
+
+@media only screen and (min-width: 640px) {
+  nav {
+    display: block;
+  }
+}
+/*
+  .icon-menu {
+    display: none;
+  }
+};*/
 
 body {
-  width: 1080px;
+  /*width: 1080px;*/
   margin: 10px 100px;
   background:
 }
 
 h1 {
-  font-size: 32pt;
+  font-size: 3vw;
 }
 
 h2 {
-  font-size: 20pt;
+  font-size: 2vw;
   margin: 10px 0;
   text-decoration: underline;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+li {
+  font-size: 1.5vw;
+}
+
+span {
+  font-size: 1.5vw;
 }
 
 .header {
@@ -34,6 +58,7 @@ h2 {
 }
 a {
   margin-right: 5px;
+  font-size: 2vw;
 }
 
 footer {
