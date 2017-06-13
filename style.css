@@ -1,3 +1,31 @@
 img {
   max-width: 100%;
+  margin-right: 10px;
+}
+
+body {
+  margin: 50px;
+  background:
+}
+
+h1 {
+  font-size: 32pt;
+}
+
+.header {
+  background: #444;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.nav-bar {
+  float: right;
+  margin-top: -70px;
+}
+a {
+  margin-right: 5px;
+}
+
+footer {
+  background: #444;
 }
