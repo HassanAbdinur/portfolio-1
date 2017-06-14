@@ -3,7 +3,7 @@
 var fillIn = [
   {
     title:       'Portfolio Page',
-    category:    'Software Development',
+    category:    'Software',
     author:      'Sharmarke Ibrahim',
     authorUrl:   'https://github.com/sharmarkei/portfolio',
     publishedOn: '2017-06-14',
