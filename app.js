@@ -1,5 +1,7 @@
 'use strict';
 
+var articles = [];
+
 function NewData(fillIn) {
   this.title = fillIn.title;
   this.category = fillIn.category;
@@ -9,8 +11,9 @@ function NewData(fillIn) {
   this.body = fillIn.body;
 }
 
-NewData.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
+NewData.prototype.toHTML = function () {
+  $newArticle = $('li.template').clone();
   $newArticle.removeClass('template');
-
-  $newArticle.find('.byline a').html(this.authorUrl);
+  $newArticle.addClass('test');
+  $newArticle.find()
+};
