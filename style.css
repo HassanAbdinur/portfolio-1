@@ -1,6 +1,6 @@
 img {
   max-width: 100%;
-  margin-right: 26px;
+  /*margin-right: 26px;*/
 }
 
 nav  {
@@ -12,17 +12,8 @@ nav  {
     display: block;
   }
 }
-/*
-  .icon-menu {
-    display: none;
-  }
-};*/
 
-body {
-  /*width: 1080px;*/
-  margin: 10px 100px;
-  background:
-}
+
 
 h1 {
   font-size: 3vw;
@@ -42,6 +33,26 @@ li {
   font-size: 1.5vw;
 }
 
+.projects {
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  outline: 2px dotted orange;
+  margin-right: 50px;
+}
+
+.projects span {
+  width: 300px;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  outline: 1px dotted black;
+  padding: 15px 0;
+  text-align: center;
+  background: #777;
+}
+
 span {
   font-size: 1.5vw;
 }
@@ -49,7 +60,7 @@ span {
 .header {
   background: #777;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .nav-bar {
