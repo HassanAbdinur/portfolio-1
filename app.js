@@ -1,19 +1,30 @@
 'use strict';
 
-var articles = [];
+var allProjects = [];
 
-function NewData(fillIn) {
-  this.title = fillIn.title;
-  this.category = fillIn.category;
-  this.author = fillIn.author;
-  this.authorUrl = fillIn.authorUrl;
-  this.publishedOn = fillIn.publishedOn;
-  this.body = fillIn.body;
+function Projects (projectData) {
+  this.title = projectData.title;
+  this.description = projectData.description;
+  this.img = projectData.img;
+  this.link = projectData.link;
+  this.developers = projectData.developers;
 }
 
-NewData.prototype.toHTML = function () {
-  $newArticle = $('li.template').clone();
-  $newArticle.removeClass('template');
-  $newArticle.addClass('test');
-  $newArticle.find()
+Projects.prototype.toHtml = function(){
+  var $newProjects = $('.template').clone();
+  $newProjects.removeClass();
+  $newProjects.find('.title').html(this.title);
+  $newProjects.find('a').attr('href', this.link);
+  $newProjects.find('.test-run').attr('src', this.img);
+  $newProjects.find('p').html(this.description);
+  return $newProjects;
 };
+
+projectData.forEach(function(object){
+  allProjects.push(new Projects(object));
+});
+
+allProjects.forEach(function(a){
+  console.log('loop');
+  $('#content').append(a.toHtml());
+});
