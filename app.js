@@ -12,7 +12,9 @@ function Projects (projectData) {
 
 Projects.prototype.toHtml = function(){
   var $newProjects = $('.template').clone();
+
   $newProjects.removeClass();
+
   $newProjects.find('.title').html(this.title);
   $newProjects.find('a').attr('href', this.link);
   $newProjects.find('.test-run').attr('src', this.img);

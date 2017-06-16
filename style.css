@@ -13,11 +13,16 @@ img {
   }
 }
 
+.banner {
+  width: 100%;
+}
+
 .template {
   display: inline-block;
   /*float: right;*/
 }
 header {
+  max-width: 100%;
   background: #444;
   margin-bottom: 10px;
 }
