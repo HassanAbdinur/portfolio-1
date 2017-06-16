@@ -1,5 +1,9 @@
 'use strict';
 
+$('.icon-menu').on('click', function() {
+  $('nav').show();
+});
+
 var allProjects = [];
 
 function Projects (projectData) {
@@ -12,14 +16,16 @@ function Projects (projectData) {
 
 Projects.prototype.toHtml = function(){
   var $newProjects = $('.template').clone();
-  $newProjects.removeClass();
+
+  $newProjects.removeClass('.template');
+
   $newProjects.find('.title').html(this.title);
-  $newProjects.find('a').attr('href', this.link);
   $newProjects.find('.test-run').attr('src', this.img);
   $newProjects.find('p').html(this.description);
-  return $newProjects;
-};
+  // return $newProjects;
+  $newProjects.appendTo('#test');
 
+};
 projectData.forEach(function(object){
   allProjects.push(new Projects(object));
 });
@@ -28,3 +34,12 @@ allProjects.forEach(function(a){
   console.log('loop');
   $('#content').append(a.toHtml());
 });
+
+$('.main-nav').on('click','.tab', function() {
+  $('.turtle').hide();
+  $('#' + $(this).data('content')).show();
+  console.log($(this).data('content'));
+});
+
+// give all the same class and different id
+// hide all the class and show one id

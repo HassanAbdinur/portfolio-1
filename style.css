@@ -1,75 +1,74 @@
 img {
   max-width: 100%;
-  /*margin-right: 26px;*/
 }
 
-nav  {
+body {
+  margin: 30px;
+
+}
+
+.clearfix {
+  clear: both;
+}
+
+.icon-menu {
+  font-size: 2.5em;
+  float: right;
+  padding-right: 10px;
+}
+
+nav ul {
   display: none;
 }
 
 @media only screen and (min-width: 640px) {
-  nav {
+  .main-nav ul {
     display: block;
   }
-}
 
+  .main-nav li {
+    margin-top: -20px;
+    display: inline;
+    font-size: 2.5vw;
+    background: #777;
+    float: right;
+    margin-right: 5px;
+  }
 
+  nav span.icon-menu {
+    display: none;
+    float: right;
+  }
+};
 
-h1 {
-  font-size: 3vw;
-}
-
-h2 {
-  font-size: 2vw;
-  margin: 10px 0;
-  text-decoration: underline;
-}
-
-p {
-  font-size: 1.5vw;
-}
-
-li {
-  font-size: 1.5vw;
-}
-
-.projects {
-  height: 300px;
-  position: relative;
-  display: inline-block;
-  width: 300px;
-  outline: 2px dotted orange;
-  margin-right: 50px;
-}
-
-.projects span {
-  width: 300px;
-  position: absolute;
+.main-nav:hover li {
   display: block;
-  bottom: 0;
-  outline: 1px dotted black;
-  padding: 15px 0;
+}
+
+img .banner {
+  /*width: 100%;*/
+}
+
+.template {
+  display: inline;
+}
+header {
+  background: green;
+}
+
+.header-h1 {
   text-align: center;
-  background: #777;
+  font-size: 3vw;
+  padding: 20px 0;
 }
 
-span {
-  font-size: 1.5vw;
+.title-skills {
+  font-size: 3vw;
+  margin-bottom: 5px;
 }
 
-.header {
-  background: #777;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.nav-bar {
-  float: right;
-  margin-top: -10px;
-}
-a {
-  margin-right: 5px;
-  font-size: 2vw;
+.container {
+  display: inline-block;
 }
 
 footer {

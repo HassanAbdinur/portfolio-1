@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
     <title>Sharmarke Ibrahim Portfolio</title>
   </head>
   <body>
 
-    <header>
-      <section>
+    <header class="site-header clearfix">
+      <section class="header-h1">
         <h1>Sharmarke Ibrahim</h1>
       </section>
 
       <nav class="main-nav">
+        <span class="icon-menu"></span>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
+          <li class="tab" data-content="articles"><a href="#">Home</a></li>
+          <li class="tab" data-content="about"><a href="#">About</a></li>
+          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
         </ul>
       </nav>
     </header>
+    <main>
 
-    <section id="content">
 
-      <div id="skills">
-        <h2 id="titleSkills">Skills</h2>
-      </div>
+      <section id="content">
 
-      <div id="projects" class="template">
-        <div class="title"></div>
-        <img class='test-run' src="">
-        <p></p>
-      </div>
-    </section>
+        <div class="turtle" id="about">
+          <h2 class="title-about">about me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div id="projects" class="turtle">
+          <div id="test" class="template" >
+            <div class="title"></div>
+            <img class='test-run' src="">
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
-      <span>©SharmarkeIbrahim.com</span>
+      <span> &copy SharmarkeIbrahim.com</span>
       <div class="logos">
         <img class="linkedin" src="assets/linkedin.png">
         <img class="github" src="assets/octocat.png">
@@ -44,8 +65,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="fillIn.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="fillIn.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="fillIn.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script> -->
 
   </body>
 </html>
