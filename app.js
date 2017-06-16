@@ -28,3 +28,12 @@ allProjects.forEach(function(a){
   console.log('loop');
   $('#content').append(a.toHtml());
 });
+
+$('.main-nav').on('click','.tab', function() {
+  $('.turtle').hide();
+  $('#' + $(this).data('content')).show();
+  console.log($(this).data('content'));
+});
+
+// give all the same class and different id
+// hide all the class and show one id
