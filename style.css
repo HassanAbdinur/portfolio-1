@@ -4,8 +4,11 @@ img {
 
 body {
   margin: 30px;
+  background: #C8E8BA;
 
 }
+
+
 
 .clearfix {
   clear: both;
@@ -53,7 +56,7 @@ img .banner {
   display: inline;
 }
 header {
-  background: green;
+  background: #D9FFE1;
 }
 
 .header-h1 {
@@ -72,10 +75,18 @@ header {
 }
 
 footer {
-  margin-top: 10px;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+
+/*footer {
+  margin-bottom: 100px;
   background: #444;
   padding: 30px;
-}
+}*/
 
 .logos {
   margin-top: -5px;
