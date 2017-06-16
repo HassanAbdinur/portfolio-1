@@ -17,15 +17,15 @@ function Projects (projectData) {
 Projects.prototype.toHtml = function(){
   var $newProjects = $('.template').clone();
 
-  $newProjects.removeClass();
+  $newProjects.removeClass('.template');
 
   $newProjects.find('.title').html(this.title);
-  $newProjects.find('a').attr('href', this.link);
   $newProjects.find('.test-run').attr('src', this.img);
   $newProjects.find('p').html(this.description);
-  return $newProjects;
-};
+  // return $newProjects;
+  $newProjects.appendTo('#test');
 
+};
 projectData.forEach(function(object){
   allProjects.push(new Projects(object));
 });

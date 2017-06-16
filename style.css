@@ -41,13 +41,16 @@ nav ul {
   }
 };
 
+.main-nav:hover li {
+  display: block;
+}
+
 img .banner {
   /*width: 100%;*/
 }
 
 .template {
-  display: inline-block;
-  /*float: right;*/
+  display: inline;
 }
 header {
   background: green;
