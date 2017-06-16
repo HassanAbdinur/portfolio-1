@@ -1,5 +1,9 @@
 'use strict';
 
+$('.icon-menu').on('click', function() {
+  $('nav').show();
+});
+
 var allProjects = [];
 
 function Projects (projectData) {
