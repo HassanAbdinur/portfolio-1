@@ -3,15 +3,30 @@ img {
   /*margin-right: 26px;*/
 }
 
-.main-nav  {
+.icon-menu {
+  font-size: 2.5em;
+  float: right;
+  padding-right: 10px;
+}
+
+nav ul {
   display: none;
 }
 
 @media only screen and (min-width: 640px) {
-  .main-nav {
+  .main-nav ul {
     display: block;
   }
-}
+
+  .main-nav li {
+    display: inline;
+  }
+
+  nav span.icon-menu {
+    display: none;
+    float: right;
+  }
+};
 
 .banner {
   width: 100%;
@@ -25,6 +40,10 @@ header {
   max-width: 100%;
   background: #444;
   margin-bottom: 10px;
+}
+
+.header-h1 {
+  font-size: 3vw;
 }
 
 .title-skills {
