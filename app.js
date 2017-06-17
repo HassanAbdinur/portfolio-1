@@ -1,8 +1,14 @@
 'use strict';
 
-$('.icon-menu').on('click', function() {
-  $('nav').show();
+// $('.icon-menu').on('click', function() {
+//   $('nav').show();
+// });
+
+$('icon-menu').on('click', function() {
+  $('.main-nav').slideToggle();
 });
+
+
 
 var allProjects = [];
 
@@ -33,6 +39,8 @@ allProjects.forEach(function(a){
 
 $('.main-nav').on('click','.tab', function() {
   $('.turtle').hide();
+  $('.tab-content').hide();
+  $('#test').hide();
   $('#' + $(this).data('content')).show();
   console.log($(this).data('content'));
 });

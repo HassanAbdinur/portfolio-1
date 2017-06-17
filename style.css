@@ -40,7 +40,7 @@ nav ul {
 
   nav span.icon-menu {
     display: none;
-    float: right;
+    /*float: right;*/
   }
 };
 
@@ -75,9 +75,9 @@ header {
 }
 
 footer {
-   position:absolute;
+   position: fixed;
    bottom:0;
-   width:100%;
+   /*width:100vw;*/
    height:60px;   /* Height of the footer */
    background:#6cf;
 }
