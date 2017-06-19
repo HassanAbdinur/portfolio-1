@@ -24,6 +24,10 @@ nav ul {
   display: none;
 }
 
+.main-nav:hover ul {
+  display: block;
+}
+
 @media only screen and (min-width: 640px) {
   .main-nav ul {
     display: block;
@@ -38,15 +42,13 @@ nav ul {
     margin-right: 5px;
   }
 
-  nav span.icon-menu {
+  .icon-menu {
     display: none;
     /*float: right;*/
   }
 };
 
-.main-nav:hover li {
-  display: block;
-}
+
 
 img .banner {
   /*width: 100%;*/
@@ -75,7 +77,7 @@ header {
 }
 
 footer {
-   position: fixed;
+   /*position: fixed;*/
    bottom:0;
    /*width:100vw;*/
    height:60px;   /* Height of the footer */
