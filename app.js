@@ -4,8 +4,8 @@
 //   $('nav').show();
 // });
 
-$('icon-menu').on('click', function() {
-  $('.main-nav').slideToggle();
+$('.icon-menu').on('click', function() {
+  $('.main-nav').fadeIn();
 });
 
 
