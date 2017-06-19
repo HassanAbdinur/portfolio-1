@@ -4,7 +4,7 @@ img {
 
 body {
   margin: 30px;
-  background: #C8E8BA;
+  background: #BAE8D8;
 
 }
 
@@ -58,7 +58,8 @@ img .banner {
   display: inline;
 }
 header {
-  background: #D9FFE1;
+  background: linear-gradient(#D9FFE1, #CCE8D8);
+
 }
 
 .header-h1 {
@@ -77,11 +78,9 @@ header {
 }
 
 footer {
-   /*position: fixed;*/
    bottom:0;
-   /*width:100vw;*/
-   height:60px;   /* Height of the footer */
-   background:#6cf;
+   height:100px;   /* Height of the footer */
+   background: linear-gradient(#D9FFE1, #CCE8D8);
 }
 
 /*footer {
@@ -93,6 +92,16 @@ footer {
 .logos {
   margin-top: -5px;
   float: right;
+}
+
+.icon-github {
+  font-size: 2.5em;
+
+}
+
+.icon-linkedin {
+  font-size: 2.5em;
+
 }
 
 
