@@ -1,8 +1,14 @@
 'use strict';
 
-$('.icon-menu').on('click', function() {
-  $('nav').show();
+// $('.icon-menu').on('click', function() {
+//   $('nav').show();
+// });
+
+$('icon-menu').on('click', function() {
+  $('.main-nav').slideToggle();
 });
+
+
 
 var allProjects = [];
 
@@ -15,16 +21,12 @@ function Projects (projectData) {
 }
 
 Projects.prototype.toHtml = function(){
-  var $newProjects = $('.template').clone();
 
-  $newProjects.removeClass('.template');
+  var template = $('#handle-template').html();
 
-  $newProjects.find('.title').html(this.title);
-  $newProjects.find('.test-run').attr('src', this.img);
-  $newProjects.find('p').html(this.description);
-  // return $newProjects;
-  $newProjects.appendTo('#test');
+  var templateRender = Handlebars.compile(template);
 
+  return templateRender(this);
 };
 projectData.forEach(function(object){
   allProjects.push(new Projects(object));
@@ -37,6 +39,8 @@ allProjects.forEach(function(a){
 
 $('.main-nav').on('click','.tab', function() {
   $('.turtle').hide();
+  $('.tab-content').hide();
+  $('#test').hide();
   $('#' + $(this).data('content')).show();
   console.log($(this).data('content'));
 });
