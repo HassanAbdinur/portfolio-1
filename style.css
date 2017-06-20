@@ -138,11 +138,21 @@ video {
 
   /*opacity: .5*/
 }
-ol  li {
+ol  li  {
   list-style: none;
   display: inline;
-  text-decoration: none;
   margin: 2px 0;
+}
+
+a {
+  font-size: 3em;
+
+}
+
+ol li a {
+  text-decoration: none;
+  /*font-size: 1em;*/
+
 }
 
 .sub-ban {
