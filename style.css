@@ -134,7 +134,7 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1000;
+  z-index: -100;
 
   /*opacity: .5*/
 }
@@ -150,5 +150,5 @@ ol  li {
 }
 
 .break {
-  padding: 100px;
+  padding: 150px;
 }
