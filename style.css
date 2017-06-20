@@ -69,8 +69,8 @@ header {
 }
 
 h1 {
-    font-size: 2em;
-    margin: 2.3em;
+  margin-top: 2.5em;
+  font-size: 2em;
 }
 
 .title-skills {
@@ -146,9 +146,9 @@ ol  li {
 }
 
 .sub-ban {
-  top: 0;
+  top: -20px;
 }
 
 .break {
-  padding: 300px;
+  padding: 100px;
 }
