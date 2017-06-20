@@ -104,17 +104,6 @@ footer {
   float: right;
 }
 
-.icon-github {
-  font-size: 2.5em;
-
-}
-
-.icon-linkedin {
-  font-size: 2.5em;
-
-}
-
-
 .github {
   width: 70px;
   height: 50px;
@@ -125,16 +114,18 @@ footer {
 }
 
 /*VIDEO CSS*/
-video {
+.video-container {
   position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
+  top: 0;
+  left: 2px;
+  right: 2px;
+  /*transform: translate(-50%, -50%);*/
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
   z-index: -100;
+  overflow: hidden;
 
   /*opacity: .5*/
 }
@@ -145,13 +136,12 @@ ol  li  {
 }
 
 a {
-  font-size: 3em;
 
 }
 
 ol li a {
   text-decoration: none;
-  /*font-size: 1em;*/
+  font-size: 1em;
 
 }
 
