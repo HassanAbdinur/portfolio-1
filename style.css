@@ -9,7 +9,6 @@ body {
 }
 
 
-
 .clearfix {
   clear: both;
 }
@@ -58,7 +57,7 @@ img .banner {
   display: inline;
 }
 header {
-  background: linear-gradient(#D9FFE1, #CCE8D8);
+  /*background: linear-gradient(#D9FFE1, #CCE8D8);*/
 
 }
 
@@ -76,6 +75,11 @@ header {
 .container {
   display: inline-block;
 }
+
+.title-about {
+  font-size: 2.5vw;
+}
+
 
 footer {
    bottom:0;
