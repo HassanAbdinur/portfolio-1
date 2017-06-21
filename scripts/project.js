@@ -33,7 +33,7 @@ Projects.fetchAll = function() {
     Projects.loadAll(JSON.parse(localStorage.projectData));
     projectView.initIndexPage();
   } else {
-    $.getJSON('scripts/fillIn.json').done(function(data) {
+    $.getJSON('/fillIn.json', function(data) {
       localStorage.projectData = JSON.stringify(data);
       Projects.loadAll(data);
       projectView.initIndexPage();
