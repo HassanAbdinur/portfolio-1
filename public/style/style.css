@@ -4,7 +4,8 @@ img {
 
 body {
   margin: 30px;
-  background: #BAE8D8;
+  /*background: #BAE8D8;*/
+  background: linear-gradient(#C8E8BA, #BAE8D8, #D9FFE1)
 
 }
 
@@ -89,7 +90,7 @@ h1 {
 footer {
    bottom:0;
    height:80px;   /* Height of the footer */
-   background: linear-gradient(#D9FFE1, #CCE8D8);
+   background: linear-gradient(#BAE8D8, #CCE8D8,#D9FFE1 );
 }
 
 /*footer {
