@@ -12,8 +12,6 @@
         <h2>{{title}}</h2>
         <img src="{{img}}">
         <p> {{description}}</p>
-        <p> {{link}}</p>
-        <p> {{name}}</p>
       </div>
     </script>
 
@@ -26,9 +24,9 @@
         <div class="sub-ban">
           <span>Software Developer</span>
           <ol>
-            <li><a class="icon-github" href="https://github.com/sharmarkei"></a>GitHub</li>
-            <li><a class="icon-linkedin" href="https://www.linkedin.com/in/sharmarke-ibrahim-97b7a3125/"></a>LinkedIn</li>
-            <li><a class="icon-twitter" href="https://twitter.com/shamarkeibrahim"></a>Twitter</li>
+            <li><a class="icon-github" href="https://github.com/sharmarkei"></a></li>
+            <li><a class="icon-linkedin" href="https://www.linkedin.com/in/sharmarke-ibrahim-97b7a3125/"></a></li>
+            <li><a class="icon-twitter" href="https://twitter.com/shamarkeibrahim"></a></li>
           </ol>
         </div>
       </section>
@@ -47,7 +45,7 @@
       <nav class="main-nav">
         <div class="icon-menu"></div>
         <ul>
-          <!-- <li class="tab" data-content="articles"><a href="#">Home</a></li> -->
+          <li class="tab" data-content="articles"><a href="#">Home</a></li>
           <li class="tab" data-content="about"><a href="#">About</a></li>
           <li class="tab" data-content="projects"><a href="#">Projects</a></li>
         </ul>
@@ -57,6 +55,11 @@
 
 
       <section id="content">
+        <div id="articles" class="home">
+          <h2>Home Page</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
 
         <div class="tab-content turtle" id="about">
           <h2 class="title-about">About Me</h2>
@@ -75,15 +78,13 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
     <script>
       Projects.fetchAll();
     </script>
-    <!-- <script src="scripts/fillIn.json"></script> -->
-    <script src="scripts/app.js"></script>
-    <!-- <script src="fillIn.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script> -->
 
   </body>
 </html>
