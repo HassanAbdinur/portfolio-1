@@ -87,11 +87,7 @@ h1 {
 }
 
 
-footer {
-   bottom:0;
-   height:80px;   /* Height of the footer */
-   background: linear-gradient(#BAE8D8, #CCE8D8,#D9FFE1 );
-}
+
 
 /*footer {
   margin-bottom: 100px;
@@ -150,5 +146,20 @@ ol li a {
 }
 
 .break {
-  padding: 150px;
+  padding: 80px;
+}
+
+
+.tab-content {
+  display: none;
+}
+
+#home {
+  display: block;
+}
+
+footer {
+   bottom:0;
+   height:80px;   /* Height of the footer */
+   background: linear-gradient(#BAE8D8, #CCE8D8,#D9FFE1 );
 }
