@@ -2,8 +2,9 @@ var projectView = {};
 
 projectView.handleMenu = function() {
   $('.main-nav').on('click','.tab', function() {
-    $('.turtle').hide();
+    // $('.turtle').hide();
     $('.tab-content').hide();
+    // $('#home').hide();
     $('#' + $(this).data('content')).show();
     console.log($(this).data('content'));
   });
