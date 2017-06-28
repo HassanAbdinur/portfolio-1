@@ -116,6 +116,7 @@ Session.vim
 .netrwhist
 # auto-generated tag files
 tags
+githubToken.js
 
 ### Windows ###
 # Windows thumbnail cache files
