@@ -15,6 +15,21 @@
       </div>
     </script>
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
+
     <title>Sharmarke Ibrahim Portfolio</title>
   </head>
   <body>
@@ -45,9 +60,10 @@
       <nav class="main-nav">
         <div class="icon-menu"></div>
         <ul>
-          <li class="tab" data-content="home"><a href="#">Home</a></li>
-          <li class="tab" data-content="about"><a href="#">About</a></li>
-          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+          <li class="tab" data-content="home"><a href="/">Home</a></li>
+          <li class="tab" data-content="github"><a href="/github">GitHub</a></li>
+          <li class="tab" data-content="about"><a href="/about">About</a></li>
+          <li class="tab" data-content="projects"><a href="/projects">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -55,7 +71,7 @@
 
 
       <section id="content">
-        <div id="home" class="tab-content home">
+        <div id="home" class="tab-contenthome">
           <h2>Home Page</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -69,19 +85,36 @@
         <div class="tab-content turtle" id="projects">
 
         </div>
+
+        <div class="tab-content turtle" id="github">
+            <ul>
+
+            </ul>
+        </div>
       </section>
     <footer>
-      <spang> &copy SharmarkeIbrahim.com</span>
+      <span> &copy; SharmarkeIbrahim.com</span>
       <div class="logos">
-        <div class="icon-github"></div>
-        <div class="icon-linkedin"></div>
+        <a class="icon-github footer" href="https://github.com/sharmarkei"></a>
+        <a class="icon-linkedin footer" href="https://www.linkedin.com/in/sharmarke-ibrahim-97b7a3125/"></a>
+        <!-- <div class="icon-github"></div>
+        <div class="icon-linkedin"></div> -->
       </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script src="scripts/project.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="/scripts/views/githubToken.js"></script>
+    <script src="scripts/model/project.js"></script>
+    <script src="/scripts/model/repo.js"></script>
     <script src="scripts/projectView.js"></script>
+    <script src="scripts/controller/aboutcontroller.js"></script>
+    <script src="scripts/controller/homecontroller.js"></script>
+    <script src="scripts/controller/projectscontroller.js"></script>
+    <script src="scripts/controller/githubcontroller.js"></script>
+    <script src="/scripts/views/repoView.js"></script>
+    <script src="scripts/controller/routes.js"></script>
     <script>
       Projects.fetchAll();
     </script>
