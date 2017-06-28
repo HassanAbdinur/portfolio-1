@@ -8,6 +8,7 @@ var app = app || {};
     $('#home').hide();
     $('#projects').hide();
     $('#about').show();
+    $('#github').hide();
   }
   module.aboutController = aboutController;
 })(app);
