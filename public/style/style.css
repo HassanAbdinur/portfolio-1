@@ -132,7 +132,11 @@ ol  li  {
 }
 
 a {
+  text-decoration: none;
+}
 
+.footer {
+  font-size: 2em;
 }
 
 ol li a {

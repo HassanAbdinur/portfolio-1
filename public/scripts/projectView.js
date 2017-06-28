@@ -1,3 +1,4 @@
+
 const projectView = {};
 
 projectView.initIndexPage = function() {
