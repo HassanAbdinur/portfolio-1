@@ -1,4 +1,5 @@
-var projectView = {};
+  const projectView = {};
+
 
 // projectView.handleMenu = function() {
 //   $('.main-nav').on('click','.tab', function() {
@@ -9,7 +10,6 @@ var projectView = {};
 //     console.log($(this).data('content'));
 //   });
 // }
-
 projectView.initIndexPage = function() {
   Projects.all.forEach(function(a){
     $('#content').append(a.toHtml());
