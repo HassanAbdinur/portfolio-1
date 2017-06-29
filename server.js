@@ -18,7 +18,7 @@ app.listen(PORT, function() {
 function proxyGitHub(request, response) {
   console.log('Routing GitHub request for', request.params[0]);
   (requestProxy({
-    url: `https://api.github.com/${request.params[0]}`,
+    url: `https://api.github.com/users/sharmarkei.repos${request.params[0]}`,
     headers: {Authorization: `token ${process.env.GITHUB_TOKEN}`}
   }))(request, response);
 }
