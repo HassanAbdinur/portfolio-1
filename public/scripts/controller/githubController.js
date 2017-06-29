@@ -5,10 +5,10 @@ var app = app || {};
   const githubController = {}
 
   githubController.init = () => {
-    $('#home').hide();
-    $('#projects').hide();
-    $('#about').hide();
-    $('#github').show();
+    $('#home').fadeOut();
+    $('#projects').fadeOut();
+    $('#about').fadeOut();
+    $('#github').fadeIn();
 
     app.repos.requestRepos(app.repoView.index);
 

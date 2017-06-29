@@ -5,10 +5,10 @@ var app = app || {};
   const homeController = {}
 
   homeController.init = () => {
-    $('#home').show();
-    $('#projects').hide();
-    $('#about').hide();
-    $('#github').hide();
+    $('#home').fadeIn();
+    $('#projects').fadeOut();
+    $('#about').fadeOut();
+    $('#github').fadeOut();
   }
   module.homeController = homeController;
 })(app);
