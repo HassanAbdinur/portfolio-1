@@ -12,7 +12,7 @@ var app = app || {};
       url: 'https://api.github.com/users/sharmarkei/repos',
       method: 'GET',
       headers: {
-        Authorization: `token ${githubToken}`
+        Authorization: `token ${GITHUB_TOKEN}`
       }
     })
       .then (data => {
