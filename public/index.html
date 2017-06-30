@@ -6,15 +6,6 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/icon.css">
 
-    <script id="handle-template" type="text/x-handlebars-templates">
-
-      <div id="test">
-        <h2>{{title}}</h2>
-        <img src="{{img}}">
-        <p> {{description}}</p>
-      </div>
-    </script>
-
     <script id="repo-template" type="text/x-handlebars-template">
       <li>
         <a href="{{html_url}}" target="_blank">
@@ -63,7 +54,6 @@
           <li class="tab" data-content="home"><a href="/">Home</a></li>
           <li class="tab" data-content="github"><a href="/github">GitHub</a></li>
           <li class="tab" data-content="about"><a href="/about">About</a></li>
-          <li class="tab" data-content="projects"><a href="/projects">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -80,10 +70,6 @@
         <div class="tab-content turtle" id="about">
           <h2 class="title-about">About Me</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="tab-content turtle" id="projects">
-
         </div>
 
         <div class="tab-content turtle" id="github">
@@ -105,18 +91,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-    <script src="/scripts/model/project.js"></script>
     <script src="/scripts/model/repo.js"></script>
-    <script src="/scripts/projectView.js"></script>
     <script src="/scripts/controller/aboutcontroller.js"></script>
     <script src="/scripts/controller/homecontroller.js"></script>
-    <script src="/scripts/controller/projectscontroller.js"></script>
     <script src="/scripts/controller/githubController.js"></script>
     <script src="/scripts/views/repoView.js"></script>
     <script src="/scripts/controller/routes.js"></script>
-    <script>
-      Projects.fetchAll();
-    </script>
-
   </body>
 </html>
