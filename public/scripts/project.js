@@ -23,8 +23,8 @@ Projects.prototype.toHtml = function(){
 
 // $('.projects').append.toHtml();
 Projects.loadAll = function(projectData) {
-  projectData.forEach(function(object){
-    Projects.all.push(new Projects(object));
+  Projects.all = projectData.map(function(object){
+    new Projects(object);
   });
 }
 
