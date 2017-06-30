@@ -6,7 +6,6 @@ var app = app || {};
 
   githubController.init = () => {
     $('#home').fadeOut();
-    $('#projects').fadeOut();
     $('#about').fadeOut();
     $('#github').fadeIn();
 

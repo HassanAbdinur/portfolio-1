@@ -6,7 +6,6 @@ var app = app || {};
 
   homeController.init = () => {
     $('#home').fadeIn();
-    $('#projects').fadeOut();
     $('#about').fadeOut();
     $('#github').fadeOut();
   }
