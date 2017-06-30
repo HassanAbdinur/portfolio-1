@@ -6,6 +6,7 @@ var app = app || {};
 
   aboutController.init = () => {
     $('#home').hide();
+    $('#projects').hide();
     $('#about').show();
     $('#github').hide();
 
